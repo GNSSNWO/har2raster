@@ -6,24 +6,28 @@
 #
 # Application to convert HAR file of cached tiles from mapy.bratislava.sk to 
 # PNG files. HAR file is JSON file with requests and responses, it is provided
-# by Google Chrome in developer mode.
+# by Google Chrome in developer mode. Image files in JSON have base64 string
+# representation and they can be easily converted back to image files.
 #
 # Interactive input:
 # harFileName - input name of HAR JSON file, follow the instruction in CLI
 #
-# Output: Folder with the similar name to input HAR file (dash separated) with
-# "png" subfolder with tiles and its world files ("*.pgw"). If selected option
-# to convert to TIFF files also "tif" folder with tiles and merged mosaic is
-# included in output folder.
+# Output:
+# Folder with the similar name to input HAR file (dash separated) with
+# "png" subfolder with tiles and its world files ("*.pgw"). No merged single 
+# PNG file is provided as output (maybe in the future will)- If the option
+# to convert PNG tiles to TIFF format is set, also "tif" folder with tiles 
+# will be created also with merged mosaic included in output folder. Merging
+# is done via GDAL_merge.py program on individual TIFF tiles with specified
+# coordinated system (EPSG: 3857).
 #
 # Requirements: 
 # - python3 interpreter installed with json,bas64,sys,os,shutil packages
 # - module har2raster.py has to be available in the same directory
 # - GDAL library installed (for conversion from PNG to TIFF)
 # 
-# Run as: $./har2png.py (be sure to add execution permission to file)
+# Run function: $./har2png.py (be sure to add execution permission to file)
 #
-# Created: Peter Spanik, 16.9.2018
 ################################################################################
 
 import json
