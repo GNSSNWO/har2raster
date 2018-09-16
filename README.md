@@ -16,10 +16,10 @@ Na správne fungovanie funkcie je potrebné mať nainštalovanú a v premennej `
 
 Ukážka terminálu pri spustení funckie na ukážkových dátach:
 <p align="center">
-  <img src="data/img/sample_run.png" width="400"/>
+  <img src="data/img/sample_run.png" width="700"/>
 </p>
 
 Územný plán Bratislavy po stiahnutí pomocou ```har2raster.py```.
 <p align="center">
-  <img src="data/img/sample_result.png" width="500"/>
+  <img src="data/img/sample_result.png" width="768"/>
 </p>
