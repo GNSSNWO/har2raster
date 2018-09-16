@@ -14,7 +14,7 @@ Na dosiahnutie dobrého výsledku konverzie, tak aby nedochádzalo k prekrytu dl
 
 Na správne fungovanie funkcie je potrebné mať nainštalovanú a v premennej ```PATH```  pridanú knižnicu [GDAL](https://www.gdal.org/). Na otestovanie funkcionality použite súbor ```data/mapy.bratislava.sk.example.har``` .
 
-Ukážka terminálu pri spustení funckie na ukážkových dátach:
+Výstup na termináli pri spustení fukcie ns použitím ukážkových dátach:
 <p align="center">
   <img src="data/img/sample_run.png" width="700"/>
 </p>
